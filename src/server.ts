@@ -13,10 +13,9 @@ app.get("/f", (req: Request, resp: Response) => {
   resp.json({ code });
 });
 
-app.post("/f", (req: Request, resp: Response) => {
-  const { name } = req.body;
+app.get("/ff", (req: Request, resp: Response) => {
 
-  resp.json({ name });
+  resp.json({ name: "FreeFire não é bom"});
 });
 
 app.listen(3333, () => {
