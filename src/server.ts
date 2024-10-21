@@ -15,7 +15,7 @@ app.get("/f", (req: Request, resp: Response) => {
 
 app.get("/ff", (req: Request, resp: Response) => {
 
-  resp.json({"FreeFire não é bom"});
+  resp.json({message:"FreeFire não é bom"});
 });
 
 app.listen(3333, () => {
